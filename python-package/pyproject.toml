@@ -30,7 +30,6 @@ classifiers = [
 dependencies = [
     "numpy",
     "scipy",
-    "nvidia-nccl-cu12 ; platform_system == 'Linux' and platform_machine != 'aarch64'"
 ]
 
 [project.urls]
@@ -38,6 +37,7 @@ documentation = "https://xgboost.readthedocs.io/en/stable/"
 repository = "https://github.com/dmlc/xgboost"
 
 [project.optional-dependencies]
+gpu = ["nvidia-nccl-cu12"]
 pandas = ["pandas"]
 scikit-learn = ["scikit-learn"]
 dask = ["dask", "pandas", "distributed"]
