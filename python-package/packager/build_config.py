@@ -11,7 +11,7 @@ class BuildConfiguration:  # pylint: disable=R0902
     # Whether to hide C++ symbols in libxgboost.so
     hide_cxx_symbols: bool = True
     # Whether to enable OpenMP
-    use_openmp: bool = True
+    use_openmp: bool = False
     # Whether to enable CUDA
     use_cuda: bool = False
     # Whether to enable NCCL
